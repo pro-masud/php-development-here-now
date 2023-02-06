@@ -12,7 +12,12 @@
     //    }
 
     
-    $x = 5;
-    echo "this is a factorual $x Number ".factorial($x);
+    // $x;
+    // echo "this is a factorual $x Number ".factorial($x);
+
+    $itemNumber = 3;
+    $itemName   = "Coffee";
+
+    robo($itemNumber,$itemName);
     
 ?>
