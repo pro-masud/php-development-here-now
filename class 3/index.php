@@ -31,14 +31,19 @@
         'h' => 'licho',
         'i' => 'boroi'
     ];
+
+    // foreach( $folsass as $key=>$value ){
+
+    //     echo $value . " = " > $key ;
+    // }
+
+    $key_array = array_keys($folsass);
+    $key_count = count($folsass);
+    
+    for( $i = 0; $i <= $key_count; $i++){
+        $key_array_is = $key_array[$i];
+        echo $key_array_is. "\n";
+    }
     
    
 
-
-
-
-
-
-
-
-?>
