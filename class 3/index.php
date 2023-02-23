@@ -169,9 +169,9 @@
         // print_r($newArrayOdd);
 
 
-        $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'];
+        // $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'];
 
-        $numbers = ['22','34','88','23','72','54','38','23'];
+        // $numbers = ['22','34','88','23','72','54','38','23'];
 
         // $numbersTow = ['98','54','12','12','82','38','47','90'];
 
@@ -188,3 +188,35 @@
         // $newArrayss = array_reduce($number, 'sumNumbers');
 
         // echo ($newArrayss);
+
+
+        
+
+        // $red = $colors['0'];
+        // $green = $colors['1'];
+        // $blue = $colors['2'];
+
+        // $color = $red .",". $green .",". $blue;
+        // echo "({$color})";
+
+
+          // list($red, $green, $blue )  =$colors = [255, 64, 167];
+
+          // echo $red ."\n";
+          // echo $green ."\n";
+          // echo $blue ;
+
+          // $number = [1,2,3,4,5,6,7,8,9,10,11];
+
+          // foreach( range(0,20) as $evenNum ){
+          //     if( $evenNum % 2 == 0 ){
+          //         echo $evenNum . "\n";
+          //     }
+          // }
+
+          // foreach( range(0,20) as $oldNum){
+          //     if( $oldNum % 2 == 1 ){
+          //       echo $oldNum . "\n";
+          //     }
+          // }
+          
