@@ -40,7 +40,7 @@ $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'
                     if(isset($_REQUEST['fname']) && $_REQUEST['fname'] != ''){
                             $name = htmlspecialchars( $_REQUEST['fname']); 
                         }
-                    // input password dynamic here now
+                   // input password dynamic here now
                     if(isset($_REQUEST['pass']) && $_REQUEST['pass'] != ''){
                                 $pass = htmlspecialchars($_REQUEST['pass']); 
                             }
@@ -51,9 +51,18 @@ $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'
                         }
 
                     // select and option dynamic here now
-                    if(isset($_POST['opens']) && $_POST['opens']  !== ''){
-                        $optionOurPut = printf("Fols Select Now : %s ", htmlspecialchars($_POST['opens']));
+                    // if(isset($_POST['opens']) && $_POST['opens']  !== ''){
+                    //     $optionOurPut = printf("Fols Select Now : %s ", htmlspecialchars($_POST['opens']));
+                    // }
+                    
+                  
+                    if( isset($_POST['opens']) && $_POST['opens'] != ''){
+                        $newInput   = $_POST['opens'];
+                        if( $newInput ){
+                            echo "Selected Option Now :". " ". join(", ",$newInput);
+                       }
                     }
+                   
                 ?>
             </p>
         </div>
@@ -68,7 +77,7 @@ $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'
                         <label for="fass">Password</label>
                         <input name="pass" type="text" id="fass" value="<?php echo $pass ; ?>">
                         <label for="fass">Chose One Now</label>
-                        <select name="opens" id="opensn">
+                        <select style="height: 200px;" name="opens[]" id="opensn" multiple>
                             <option value="" selected> Select Now</option>
                             <?php  inputOption($fols); ?>
                         </select>
