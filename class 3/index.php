@@ -220,3 +220,12 @@
           //     }
           // }
           
+
+          $random = mt_rand(0, 10);
+
+            // basic project here head and tail project 01
+          if( $random % 2 == 0 ){
+              echo "Head Now" ." ". $random;
+          }else{
+              echo "Tail Now" ." ". $random;
+          }
