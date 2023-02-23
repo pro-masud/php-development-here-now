@@ -140,11 +140,51 @@
           // $arrayThree   = ['gosto','ruti','prodeveloper'];
 
 
-        $fols = ['alo','potol','mango','lemon',
-        'b' => 'dalim','piyara','anaros','licho','boroi'];
+        // $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'];
 
-        if( key_exists('b',$fols)){
-            echo "This value is exists Here";
-        }else{
-            echo "This value is Not exists Here";
-        }
+        // $numbers = ['22','34','88','23','72','54','38','23'];
+        // $numbersTow = ['98','54','12','12','82','38','47','90'];
+
+        // $student = ['']
+
+        // $number = [1,2,3,4,5,6,7,8,9,10,11];
+
+            
+
+        // function newArray($n){
+        //    echo "Square of { $n } is $n * $n"."\n \n";
+        // }
+
+        // function even($n){
+        //     return $n % 2 == 0 ;
+        // }
+        // function Odd($n){
+        //   return $n % 2 == 1 ;
+        // }
+
+        // $newArrayEven = array_filter($number,'even');
+        // $newArrayOdd = array_filter($number,'Odd');
+
+        // print_r($newArrayEven);
+        // print_r($newArrayOdd);
+
+
+        $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'];
+
+        $numbers = ['22','34','88','23','72','54','38','23'];
+
+        // $numbersTow = ['98','54','12','12','82','38','47','90'];
+
+        // $number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+
+        // function sumNumbers( $oldNumber, $newNumber){
+        //         if( $newNumber % 2 == 0 ){
+        //           return $oldNumber + $newNumber;
+        //         }
+        //         return $oldNumber;
+        // }
+
+
+        // $newArrayss = array_reduce($number, 'sumNumbers');
+
+        // echo ($newArrayss);
