@@ -55,13 +55,14 @@ $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'
                     //     $optionOurPut = printf("Fols Select Now : %s ", htmlspecialchars($_POST['opens']));
                     // }
                     
+                    
                   
-                    if( isset($_POST['opens']) && $_POST['opens'] != ''){
-                        $newInput   = $_POST['opens'];
-                        if( $newInput ){
-                            echo "Selected Option Now :". " ". join(", ",$newInput);
+                    
+                        $newInputNow   = filter_input(INPUT_POST,'opens', FILTER_SANITIZE_STRING);
+                        if( $newInputNow ){
+                            echo "Selected Option Now :". " ". join(", ", $newInputNow);
                        }
-                    }
+                  
                    
                 ?>
             </p>
@@ -78,8 +79,8 @@ $fols = ['alo','potol','mango','lemon','dalim','piyara','anaros','licho','boroi'
                         <input name="pass" type="text" id="fass" value="<?php echo $pass ; ?>">
                         <label for="fass">Chose One Now</label>
                         <select style="height: 200px;" name="opens[]" id="opensn" multiple>
-                            <option value="" selected> Select Now</option>
-                            <?php  inputOption($fols); ?>
+                            <option value=""> Select Now</option>
+                            <?php  inputOption($fols, $newInputNow ); ?>
                         </select>
                         <input name="submit" class="button-primary" type="submit" value="Send">
                     </fieldset>

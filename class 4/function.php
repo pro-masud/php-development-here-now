@@ -12,9 +12,13 @@
     }
  }
 
- function inputOption($values){
+ function inputOption($values, $newInputNow){
+    $newSelect = '';
     foreach( $values as $value){
-        printf("<option value'%s'>%s</option>",strtolower($value),ucwords($value));
+        if( in_array($value, $newInputNow)){
+            $newSelect = "selected";
+        }
+        printf("<option value='%s' %s> %s </option>",strtolower($value), $newSelect, ucwords($value));
     }
  }
 
