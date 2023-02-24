@@ -11,12 +11,21 @@
 <?php 
 
 
-$pro = <<<EOD
-Lorem ipsum dolor sit amet consectetur \n adipisicing elit. Sint laborum rerum,\n consequatur voluptatibus mollitia\n illum eius voluptatem. Sed, debitis velit.
-EOD;
+// $pro = <<<EOD
+// Lorem ipsum dolor sit amet consectetur \n adipisicing elit. Sint laborum rerum,\n consequatur voluptatibus mollitia\n illum eius voluptatem. Sed, debitis velit.
+// EOD;
 
-$convertbr = nl2br($pro);
-echo $convertbr;
+$pro = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laborum rerum consequatur voluptatibus mollitia illum eius voluptatem. Sed, debitis velit.";
+
+
+    $newORD = ord('A');
+    echo $newORD;
+
+    $newORDSimbal = chr("38");
+    echo $newORDSimbal;
+
+
+
 ?>
 
     
