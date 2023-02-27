@@ -6,14 +6,6 @@ bootstrap
 wordpress
 php
 mysqli
-html 
-css3
-javascript
-jquery
-bootstrap
-wordpress
-php
-mysqli
 Masud rana 
 PHP 
 WordPress 
