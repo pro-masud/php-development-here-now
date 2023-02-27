@@ -14,17 +14,47 @@
     // One function file all read data here now
     // $fullContent = file($filepath);
     // print_r($fullContent);
-    
+
     // $fullContent = file_get_contents($filepath);
     // print_r($fullContent);
 
+
+//     $filepath = "D:\\PHP\\work\\php development work\\class work\\class 7\\file\\data.txt";
+
+//     $fileRead = file_get_contents($filepath);
+
+//    $fileOpen = fopen( $filepath, 'a');
+
+//    fwrite($fileOpen, $fileRead);
+//    echo "\n";
+//    echo "\n";
+//    echo "\n";
+//    fwrite($fileOpen, "Masud rana \n");
+//    fwrite($fileOpen, "PHP \n");
+//    fwrite($fileOpen, "WordPress \n");
+
+
+//    fclose($fileOpen);
+
+
     $filepath = "D:\\PHP\\work\\php development work\\class work\\class 7\\file\\data.txt";
 
-    $fullContent = file_get_contents($filepath);
+    $fileRead = file_get_contents($filepath);
 
-    print_r($fullContent);
+   $fileOpen = fopen( $filepath, 'a');
 
-   
+   fwrite($fileOpen, $fileRead);
+   echo "\n";
+   echo "\n";
+   echo "\n";
+   fwrite($fileOpen, "Masud rana \n");
+   fwrite($fileOpen, "PHP \n");
+   fwrite($fileOpen, "WordPress \n");
+
+
+   fclose($fileOpen);
+
+  
 
 
 
