@@ -73,7 +73,7 @@
         
     if( is_writable($filepath)){
         $fileRead = file_get_contents($filepath);
-        $fileOpen = fopen( $filepath, 'w');
+        $fileOpen = fopen( $filepath, 'a+');
 
         fwrite($fileOpen, $fileRead);
         echo "\n";
