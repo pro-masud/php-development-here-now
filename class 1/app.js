@@ -1,5 +1,5 @@
 
-    let FristName = prompt("First Name");
-    let LastName = prompt("Last Name");
+    var name = prompt("Your Name");
+    var Job_title = prompt("Your Job Title");
 
-   console.log('my name is '+ FristName, LastName);
+    console.log("my name is " + name + " and I'm "+ Job_title + " Stact Developer");
